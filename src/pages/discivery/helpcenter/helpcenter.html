@@ -1,0 +1,64 @@
+
+<ion-header class="headertitle">
+
+  <ion-navbar color="navhead">
+    <ion-title>帮助中心</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+  <h1>这里显示您关心的问题</h1>
+  <ion-item>
+    <ion-label> Start Time</ion-label>
+    <ion-datetime displayFormat="MM/YYYY" min="2016" max="2020-10-31"></ion-datetime>
+  </ion-item>
+
+  <ion-item-group>
+    <ion-item-divider color="light">A</ion-item-divider>
+    <ion-item>Angola</ion-item>
+    <ion-item>Argentina</ion-item>
+  </ion-item-group>
+
+
+  <!--头像列表-->
+  <ion-list>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/images/iocn_01.png">
+      </ion-avatar>
+      <h2>zeiqiong</h2>
+      <h3>zhen</h3>
+      <p>i have a dream</p>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/images/iocn_01.png">
+        </ion-avatar>
+        <h2>Slimer</h2>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="primary">
+          text
+        </button>
+        <button ion-button color="secondary">
+          call
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+  <button ion-button block (click)="showLoading()">
+    显示loading
+  </button>
+
+  <button ion-button block (click)="presentPopocer($event)">
+    <ion-icon name="more"></ion-icon>
+  </button>
+
+</ion-content>

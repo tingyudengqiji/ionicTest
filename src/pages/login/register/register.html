@@ -1,0 +1,38 @@
+
+<ion-header>
+  <ion-navbar color="navhead">
+    <ion-title>注册</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="bgcolor ">
+  <ion-list class="loginlist">
+    <ion-item no-lines class="bgcolor" style=" border-style: solid; border-width: 1px;border-color: white;">
+      <ion-icon name="ios-contact-outline" item-left></ion-icon>
+      <ion-input type="text" placeholder="请输入手机号" clearInput ></ion-input>
+    </ion-item>
+    <ion-item no-lines class="bgcolor" style=" border-style: solid; border-width: 1px;border-color: white;">
+      <ion-icon name="ios-unlock-outline" item-left></ion-icon>
+      <ion-input type="password" placeholder="请输入密码" clearInput  ></ion-input>
+    </ion-item>
+
+    <ion-item no-lines class="bgcolor" style=" border-style: solid; border-width: 1px;border-color: white;">
+      <ion-icon name="ios-unlock-outline" item-left></ion-icon>
+      <ion-input type="password" placeholder="请再次输入密码" clearInput  ></ion-input>
+    </ion-item>
+    <ion-item no-lines class="bgcolor" style=" border-style: solid; border-width: 1px;border-color: white;">
+      <ion-icon name="ios-unlock-outline" item-left></ion-icon>
+      <ion-input type="number" placeholder="验证码" clearInput class="checkcode" ></ion-input>
+      <button ion-button  color="danger"  item-right (click)="getIdentifyCode()"  >
+        获取验证码
+      </button>
+    </ion-item>
+
+
+    <button ion-button block class="loginButton"  (click)="registerAccount()" >
+      注册
+    </button>
+  </ion-list>
+</ion-content>

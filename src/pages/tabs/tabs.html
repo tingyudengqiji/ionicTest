@@ -1,0 +1,7 @@
+<ion-tabs (ionChange)="changeTabs($event)">
+  <!--selectedIndex="2"-->
+  <ion-tab [root]="tab1Root" tabTitle="首页" tabIcon="home"></ion-tab>
+  <ion-tab [root]="tab2Root" tabTitle="理财" tabIcon="contacts"></ion-tab>
+  <ion-tab [root]="tab3Root" tabTitle="发现" tabIcon="search"></ion-tab>
+  <ion-tab [root]="tab4Root" tabTitle="我的" tabIcon="person"  tabBadge="12" tabBadgeStyle="danger"></ion-tab>
+</ion-tabs>

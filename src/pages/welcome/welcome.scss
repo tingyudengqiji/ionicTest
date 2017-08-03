@@ -1,0 +1,25 @@
+page-welcome {
+  ion-slide {
+    background-color: #eeeeee;
+  }
+  ion-slide img {
+    height: 100% !important;
+    width: 100% !important;
+  }
+
+  .gohome{
+    position:absolute;
+    bottom: 40px;
+    left:50%;
+    color: white;
+    background-color:rgb(187,225,238);
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 5px;
+    margin-left: -50px;
+    width: 100px;
+    height: 35px;
+    display: block;
+  }
+}

@@ -1,0 +1,39 @@
+
+.headertitle{
+  text-align: center;
+}
+.bgcolor{
+  background-color: rgb(242,242,242);
+}
+.hlong *{
+  display:inline-block;
+  vertical-align:middle
+}
+.loginlist{
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto 20px auto 20px;
+  //width:300px;
+  height:275px;
+  position:absolute;
+}
+.loginButton{
+  background-color: rgb(140,210,214);
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.toast{
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  z-index: 10;
+  display: block;
+  width: 50%;
+  max-width: 700px;
+  text-align: center;
+
+}

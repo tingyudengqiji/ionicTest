@@ -1,0 +1,26 @@
+<ion-header class="headertitle " >
+  <ion-navbar color="navhead" >
+    <ion-title >
+      我的
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="bgcolor">
+
+  <ion-item-group>
+    <ion-item *ngFor="let bankInfo of bankCardArr  let i=index"class="hlong "  detail-push (click)="pushAction(i)">
+      <img src="assets/images/self_icon_0{{i+1}}@2x.png" class="celliocn"/>
+      <span >{{bankInfo}}</span>
+    </ion-item>
+  </ion-item-group>
+
+  <ion-item-group>
+    <ion-item-divider color="light"></ion-item-divider>
+    <ion-item *ngFor="let passwardInfo of passwardArr let i=index"class="hlong" detail-push (click)="pushAction(i)">
+      <img src="assets/images/self_icon_0{{i+4}}@2x.png" class="celliocn"/>
+      <span>{{passwardInfo}}</span>
+    </ion-item>
+  </ion-item-group>
+
+</ion-content>

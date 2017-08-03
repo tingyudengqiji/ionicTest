@@ -1,0 +1,63 @@
+<ion-header class="headertitle">
+  <ion-navbar color="navhead">
+    <ion-title >
+      发现
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content  class="bgcolor">
+
+  <div>
+    <img src="assets/images/banner_find.png" class="discoveryimg"/>
+  </div>
+
+  <ion-grid >
+    <ion-row class="ionrow" wrap>
+      <ion-col col-6 class="ioncol"*ngFor="let info  of firstArr let i = index" (click)="chooseAction(i)">
+          <div style="width: 60px; margin-top: 5px; float: left">
+            <img src="assets/images/icon_02.png" class="imgtitle"/>
+          </div>
+          <div style="margin-top: 13px">
+            <label >{{info}}</label><br/>
+            <label class="explainlabel">{{secondArr[i]}}</label>
+          </div>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row class="ionrow" style="height: 40px;margin-top: 100px;" (click)="callPhone('15695658187')">
+      <ion-col class="servicelabel">
+        <label >服务热线：400</label>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!--<ion-item-group>-->
+
+    <!--<ion-item *ngFor="let info  of firstArr let i = index" class="hlong "  detail-push (click)="testAction(i)">-->
+
+      <!--<img src="assets/images/icon_find_0{{i+5}}.png" class="celliocn"/>-->
+      <!--<span >{{info}}</span>-->
+    <!--</ion-item>-->
+  <!--</ion-item-group>-->
+  <!---->
+  <!--<ion-item-group>-->
+    <!--<ion-item-divider color="light"></ion-item-divider>-->
+    <!--<ion-item *ngFor="let info  of secondArr let i = index" class="hlong "  detail-push (click)="secondAction(i)">-->
+      <!--<img src="assets/images/icon_find_{{i+3}}@2x.png" class="celliocn"/>-->
+      <!--<span >{{info}}</span>-->
+    <!--</ion-item>-->
+
+  <!--</ion-item-group>-->
+
+  <!--<ion-item-group>-->
+    <!--<ion-item-divider color="light"></ion-item-divider>-->
+    <!--<ion-item class="hlong" (click)="callPhone('15902164225')">-->
+      <!--<img src="assets/images/findr_icon_TEL@2x.png" class="celliocn"/>-->
+      <!--<span>服务热线 400-856-9190</span>-->
+    <!--</ion-item>-->
+
+  <!--</ion-item-group>-->
+
+</ion-content>
